@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harman</title>
+
+    <link href="css/app.css" rel="stylesheet" />
+	
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="light-mode">
+<div class="page">
+    <!-- Header -->
+    <header class="sticky-top bg-body shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-dumbbell me-2"></i>
+                    <strong>Harman</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Client Stories</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="https://instagram.com/iharmansandhux" target="_blank" class="nav-link me-2">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a> 
+                            <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=06RqMe708Eic587y4eKjMVk4Z7YTavxNsKuLpw9zA15UNU4yTlkyWFBJTElTU1ZPRjE4U0Y3Q1VOOS4u" 
+                               target="_blank" class="nav-link">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+							<button class="btn btn-sm" id="themeToggle">🌙</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="hero py-4">
+        <div class="container mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>Hi! I'm Harman and I am sharing my journey to inspire others.</p>
+                    <p>Fitness has always been a passion of mine, and I believe that anyone can achieve their goals with the right guidance and mindset.</p>
+                    <p>Through personalized training plans, coaching, and practical advice, I help busy individuals integrate fitness into their daily lives.</p>
+                    <p>My mission is to make health and wellness simple, effective, and enjoyable, so that you can feel confident, strong, and energized every day.</p>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="https://instagram.com/iharmansandhux" target="_blank" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram fs-5"></i> Instagram
+                        </a>
+                        <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=06RqMe708Eic587y4eKjMVk4Z7YTavxNsKuLpw9zA15UNU4yTlkyWFBJTElTU1ZPRjE4U0Y3Q1VOOS4u"
+                           target="_blank" class="text-decoration-none">
+                            <i class="fa-solid fa-envelope fs-5"></i> Send me a message
+                        </a>
+                    </div>
+
+                    <blockquote class="mt-5 p-0">
+                        <p><i>"Every action you take is a vote for the type of person you wish to become."</i></p>
+                        <footer class="blockquote-footer">James Clear, <cite title="Atomic Habits">Atomic Habits</cite></footer>
+                    </blockquote>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <a href="https://instagram.com/iharmansandhux" target="_blank">
+                        <img src="images/profile.jpg" alt="Profile" style="max-width: 60%; max-height: 30%;" class="img-fluid rounded shadow mb-3" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-3">
+        <div class="container">
+            <h4 class="mb-4 text-start">Services</h4>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Training Sessions</h5>
+                            <p class="card-text">
+                                Certified Personal Trainer offering <strong>online sessions</strong>, and <strong>offline sessions in Toronto</strong> for those who prefer in-person guidance.
+                            </p>
+                            <p class="card-text">
+                                Track your progress using the <strong>Trainerize app</strong>, with detailed stats, workout history, and performance insights.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Nutrition & Planning</h5>
+                            <p class="card-text">
+                                Personalized nutrition planning including <strong>meal prep guidance</strong> and advice on supplements to support your fitness goals.
+                            </p>
+                            <p class="card-text">
+                                Focused on creating and maintaining healthy habits to maximize your results alongside training.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h4 class="mb-4 text-center">What Clients Say</h4>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card shadow-sm p-4 mx-auto w-75">
+                            <blockquote class="blockquote mb-0 text-center">
+                                <p>“I’ve been training with Harman for several months now, and the results have been incredible! He’s not just a personal trainer, he’s a motivator, educator, and true professional. Harman takes the time to understand your goals and tailors every session to help you reach them efficiently and safely. His workouts are always challenging but fun, and he constantly switches things up to keep it fresh. I’ve gained strength, energy, and confidence thanks to his guidance. If you’re looking for a trainer who genuinely cares and delivers real results, Harman is the one!”</p>
+                                <footer class="blockquote-footer mt-2">Mohit</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card shadow-sm p-4 mx-auto w-75">
+                            <blockquote class="blockquote mb-0 text-center">
+                                <p>“Harman is one the most genuine person I've seen. He is not only highly dedicated, humble but professional, also. If you are looking to change your life around, make sure to hit him up.”</p>
+                                <footer class="blockquote-footer mt-2">Yashdeep</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card shadow-sm p-4 mx-auto w-75">
+                            <blockquote class="blockquote mb-0 text-center">
+                                <p>“A one call away, handsome, intelligent and multilingual personal trainer. Tell me what else do you want? He knows his stuff. Yes, Harman is the best you could find. He is full of knowledge and I’m sure, if he can motivate me in doing REGULAR exercises, he for sure can motivate you too. Thanks for the support Harman.”</p>
+                                <footer class="blockquote-footer mt-2">Vinayak</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card shadow-sm p-4 mx-auto w-75">
+                            <blockquote class="blockquote mb-0 text-center">
+                                <p>“Harman is helping me improve my diet and build a stronger, more muscular body. His guidance and support make a real difference—highly recommended!”</p>
+                                <footer class="blockquote-footer mt-2">Gursimran</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <p class="mb-3">
+                        Watch my latest video with the one and only Vineet where we dive into the mindset behind true discipline —
+                        how he stayed consistent, never gave up, and built a sustainable fitness lifestyle that goes beyond motivation.
+                    </p>
+                    <p>
+                        We break down practical strategies you can apply today to stay consistent with your fitness journey,
+                        avoid burnout, and make your routine truly sustainable.
+                    </p>
+                </div>
+
+                 <div class="col-md-6">
+					 <div class="ratio ratio-16x9">
+						 <iframe width="560" height="315" loading="lazy"
+								 src="https://www.youtube.com/embed/Q2kHUkpw0xM"
+								 title="YouTube video player" frameborder="0"
+								 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+						 </iframe>
+					 </div>
+				 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs" class="py-5">
+        <div class="container">
+            <h4 class="mb-4 text-start">FAQs</h4>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true">
+                            What should I expect in the first session?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Initial consultation, goal setting and a sample workout. We’ll build a plan you can follow afterwards using the Trainerize app.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo">
+                            What nutrition guidance do you provide?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            I provide meal prep guidance according to your body requirements. Use the macro calculator below for a quick estimate.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree">
+                            Can I train online only?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Yes. Online clients receive video feedback, and scheduled coaching calls according to their plan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer container text-center pb-4">
+        <small>© <span id="year"></span> — Harman. All rights reserved.</small>
+    </footer>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>
